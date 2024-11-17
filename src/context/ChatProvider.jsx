@@ -21,7 +21,10 @@ function ChatProvider({ children }) {
       navigate("/");
     }
 
-    const newSocket = io.connect("https://real-time-chat-app-server-sigma.vercel.app/");
+    const newSocket = io.connect("https://real-time-chat-app-server-sigma.vercel.app/",{
+      withCredentials: true, // Important to allow credentials
+      transports: ["websocket"],
+    });
     setSocket(newSocket);
 
     return () => {
