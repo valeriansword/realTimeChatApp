@@ -1,0 +1,31 @@
+.overLayModal-background{
+    background-color: rgba(0,0,0,0.3);
+    width:100%;
+    height:100vh;
+    cursor: pointer;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:9;
+    
+
+}
+.overLayModal-container{
+    background-color: #dad7cd;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    z-index:10;
+    /* padding:30px; */
+    width: 300px;
+    height: fit-content;
+    border-radius: 10px;
+}
+@media(max-width:600px){
+    .overLayModal-container{
+        width:90%;
+    }
+}
