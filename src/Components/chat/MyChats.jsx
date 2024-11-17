@@ -56,7 +56,8 @@ function MyChats() {
 
         setLoggedUser(loggedUser);
        
-        axios.get("https://real-time-chat-app-server-sigma.vercel.app/api/user/allUsers",{
+        axios.get("https://real-time-chat-app-server-sigma.vercel.app/api/user/allUsers",{ 
+          withCredentials: true,
                    headers:{
                     //  "content-type":"application/json",
                     Authorization:`Bearer ${loggedUser.token}`
