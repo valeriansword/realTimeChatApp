@@ -5,7 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import ChatLoading from './ChatLoading';
 import "./mychats.css"
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarImage } from "../ui/avatar.jsx"
 export const getSender=(loggedUser,users)=>{
   return users[0]._id===loggedUser._id?users[1].name:users[0].name;
 

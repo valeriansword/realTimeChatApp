@@ -4,7 +4,7 @@ import { MdVideoCall } from "react-icons/md";
 import { PiPhoneCall } from "react-icons/pi";
 
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarImage } from "../ui/avatar.jsx"
 import "./chatBox.css"
 import axios from 'axios';
 

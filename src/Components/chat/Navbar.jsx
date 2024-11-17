@@ -11,7 +11,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "../ui/dropdown-menu.jsx"
 import ProfileModal from './ProfileModel';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from './SideBar';
