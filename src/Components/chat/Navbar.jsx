@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { IoSearch } from "react-icons/io5";
 import { IoNotifications } from "react-icons/io5";
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
-//import avatar from "../../assets/userProfile.jpg"
+
 import { ChatState } from "../../context/ChatProvider"
 import {
   DropdownMenu,
