@@ -2,7 +2,6 @@ import { useState } from "react";
 import ChatLoading from "./ChatLoading";
 //import UserListItem from "./UserListItem";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 function Sidebar({ sideBar, onClose,handleSearch}) {
 
    const [searchRes,setSearchRes]=useState("");

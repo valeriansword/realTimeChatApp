@@ -7,7 +7,7 @@ import { PiPhoneCall } from "react-icons/pi";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import "./chatBox.css"
 import axios from 'axios';
-import { Socket } from 'socket.io-client';
+
 function ChatBox() {
     const [loggedUser, setLoggedUser] = useState();
  
