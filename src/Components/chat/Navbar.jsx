@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { IoSearch } from "react-icons/io5";
 import { IoNotifications } from "react-icons/io5";
-import { Avatar, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarImage } from "../ui/avatar.jsx"
 
 import { ChatState } from "../../context/ChatProvider"
 import {
