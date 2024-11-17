@@ -1,4 +1,4 @@
-import { ChatState } from '@/context/ChatProvider';
+import { ChatState } from '../../context/ChatProvider';
 import React, { useEffect, useRef, useState } from 'react'
 import { MdVideoCall } from "react-icons/md";
 import { PiPhoneCall } from "react-icons/pi";

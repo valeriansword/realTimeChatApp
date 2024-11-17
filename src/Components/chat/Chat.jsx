@@ -3,7 +3,7 @@ import {  useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import MyChats from './MyChats';
 import ChatBox from './ChatBox';
-import { ChatState } from '@/context/ChatProvider';
+import { ChatState } from '../../context/ChatProvider';
 import "./chatPage.css"
 
 function Chat() {

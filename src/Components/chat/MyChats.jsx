@@ -1,4 +1,4 @@
-import { ChatState } from '@/context/ChatProvider';
+import { ChatState } from '../../context/ChatProvider.jsx';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { ToastContainer } from 'react-toastify';
