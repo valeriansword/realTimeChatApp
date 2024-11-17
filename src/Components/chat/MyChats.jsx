@@ -56,7 +56,7 @@ function MyChats() {
 
         setLoggedUser(loggedUser);
        
-        axios.get("http://localhost:3000/api/user/allUsers",{
+        axios.get("https://real-time-chat-app-server-sigma.vercel.app/api/user/allUsers",{
                    headers:{
                     //  "content-type":"application/json",
                     Authorization:`Bearer ${loggedUser.token}`
@@ -90,7 +90,7 @@ function MyChats() {
     }
 
     setLoggedUser(loggedUser);
-    axios.get("http://localhost:3000/api/chat/message/receive/"+id,{
+    axios.get("https://real-time-chat-app-server-sigma.vercel.app/api/chat/message/receive/"+id,{
         headers:{
             //  "content-type":"application/json",
             Authorization:`Bearer ${loggedUser.token}`

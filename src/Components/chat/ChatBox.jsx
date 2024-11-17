@@ -31,7 +31,7 @@ function ChatBox() {
         }
 
         setLoggedUser(loggedUser);
-        axios.post("http://localhost:3000/api/chat/message/send/"+recId,{content:message},{
+        axios.post("https://real-time-chat-app-server-sigma.vercel.app/api/chat/message/send/"+recId,{content:message},{
             headers:{
                 //  "content-type":"application/json",
                 Authorization:`Bearer ${loggedUser.token}`
