@@ -29,7 +29,7 @@ function Login() {
             setLoading(false);
             return;
         }
-        axios.post("https://real-time-chat-app-server-ikq4d5pk8-valerianswords-projects.vercel.app/api/user/login",formData,
+        axios.post("http://localhost:3000/api/user/login",formData,
             {
                 headers:{
                     'Content-Type': 'application/json'
