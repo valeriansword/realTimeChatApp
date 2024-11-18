@@ -63,7 +63,7 @@ function SignUp() {
             return;
         }
 
-        axios.post("http://localhost:3000/api/user",formData,
+        axios.post("https://real-time-chat-app-server-sigma.vercel.app/api/user",formData,
             {
                 header:{
                     'Content-Type': 'application/json'

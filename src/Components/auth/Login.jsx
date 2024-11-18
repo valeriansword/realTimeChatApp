@@ -29,7 +29,7 @@ function Login() {
             setLoading(false);
             return;
         }
-        axios.post("http://localhost:3000/api/user/login",formData,
+        axios.post("https://real-time-chat-app-server-sigma.vercel.app/api/user/login",formData,
             {
                 header:{
                     'Content-Type': 'application/json'
