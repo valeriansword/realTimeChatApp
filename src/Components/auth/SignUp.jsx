@@ -65,7 +65,7 @@ function SignUp() {
 
         axios.post("https://real-time-chat-app-server-sigma.vercel.app/api/user",formData,
             {
-                header:{
+                headers:{
                     'Content-Type': 'application/json'
                 }
             }

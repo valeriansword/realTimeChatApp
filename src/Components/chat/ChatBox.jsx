@@ -69,10 +69,11 @@ function ChatBox() {
     const messageContainerRef = useRef(null); // Ref for the message container
 
     const scrollToBottom = () => {
-        if (chatEndRef.current) {
-            chatEndRef.current.scrollIntoView({ behavior: "smooth" });
+        if (messageContainerRef.current) {
+            messageContainerRef.current.scrollTop = messageContainerRef.current.scrollHeight;
         }
     };
+    
 
     useEffect(() => {
         scrollToBottom(); // Scroll to bottom when new messages are added
@@ -109,12 +110,12 @@ function ChatBox() {
                         convo.map((convos,index)=>(
                             <div key={index} className={`flex px-4 ${convos.sender===user.user.id?" justify-end ":" justify-start "}`}>
                                 <h1 className={`text-xl font-bold ${convos.sender===user.user.id?" bg-blue-500 text-white px-2 rounded-md ":" bg-white text-black px-2 rounded-md "}`}>{convos.content}</h1>
-
+                               
                             </div>
                         ))
                     )
                 }
-                 <div ref={chatEndRef}></div>
+                  <div ref={chatEndRef} style={{ height: 0, margin: 0, padding: 0 }}></div> 
             </div>
            {/* down form field */}
            
